@@ -1,0 +1,14 @@
+[project]
+name = "foo"
+version = "0.0.0"
+description = ""
+authors = [
+    { name = "Foo Example", email = "foo@example.com" },
+]
+dynamic = ["dependencies"]
+
+[tool.setuptools]
+packages = ["foo"]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
